@@ -1,49 +1,7 @@
 /* Estilos generales */
 body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: pink; /* Fondo rosa */
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para los encabezados */
-header h1 {
-    font-family: 'Cursive', sans-serif; /* Fuente cursiva */
-    color: #4A90E2;
-    font-size: 2.5rem;
-}
-
-/* Estilo para los botones */
-button {
-    background-color: #FF4081;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 8px;
-}
-
-/* Animación de los botones */
-button:hover {
-    background-color: #F50057;
-    transform: scale(1.1);
-}
-
-/* Estilo para el mensaje de bienvenida */
-#greetingMessage {
-    font-size: 1.5rem;
-    color: #4A90E2;
-    margin-top: 20px;
-}
-/* Estilos generales */
-body {
     font-family: 'Lora', serif; /* Fuente Lora */
-    background-color: #F7D1D1; /* Fondo Rosa Pastel */
+    background-color: #F7D1D1; /* Fondo rosa pastel */
     color: #333;
     text-align: center;
     margin: 0;
@@ -60,24 +18,35 @@ header h1 {
 
 /* Estilos para los inputs y botones */
 input, button {
-    padding: 10px;
-    font-size: 1rem;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 12px 20px; /* Botones con más padding */
+    font-size: 1.1rem;
+    margin: 15px;
+    border-radius: 8px; /* Bordes redondeados */
 }
 
-/* Botón de acción */
+/* Estilo único para los botones */
 button {
-    background-color: #FF80AB;
+    background-color: #FF4081; /* Color base */
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
 
-/* Animación de los botones */
+/* Efecto hover en los botones */
 button:hover {
-    background-color: #F50057;
+    background-color: #F50057; /* Cambio de color */
+    transform: scale(1.1); /* Ampliar el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+/* Estilo para el mensaje de bienvenida */
+#greetingMessage {
+    font-size: 1.5rem;
+    color: #4A90E2;
+    margin-top: 20px;
 }
 
 /* Estilo para el mensaje de edad */
@@ -87,7 +56,7 @@ button:hover {
     color: #E91E63;
 }
 
-/* Estilos de la galería */
+/* Estilos para la galería de imágenes */
 .gallery {
     display: flex;
     justify-content: center;
@@ -96,6 +65,7 @@ button:hover {
     margin-top: 20px;
 }
 
+/* Estilos generales para las imágenes */
 .img {
     width: 200px;
     height: 200px;
@@ -103,110 +73,83 @@ button:hover {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Animaciones para las imágenes */
+/* Animación para las imágenes */
 .img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
+    transform: scale(1.1); /* Aumenta el tamaño */
+    filter: brightness(1.2); /* Aumenta el brillo */
 }
 
+/* Diferentes efectos en imágenes específicas */
 .img:nth-child(1):hover {
-    transform: rotate(10deg);
+    transform: rotate(10deg); /* Rotación en la primera imagen */
 }
 
 .img:nth-child(2):hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* Movimiento hacia arriba en la segunda */
 }
 
 .img:nth-child(3):hover {
-    transform: rotate(-10deg);
+    transform: rotate(-10deg); /* Rotación inversa en la tercera */
 }
 
 .img:nth-child(4):hover {
-    transform: translateX(10px);
+    transform: translateX(10px); /* Movimiento hacia la derecha en la cuarta */
 }
 
 .img:nth-child(5):hover {
-    transform: scale(1.2) rotate(15deg);
+    transform: scale(1.2) rotate(15deg); /* Escalado y rotación en la quinta */
 }
 
-/* Estilo para los botones de navegación */
-button:last-of-type {
-    margin-top: 20px;
-}
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif; /* Letra Arial */
-    background-color: #F7D1D1; /* Fondo rosa pastel */
-    color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para el encabezado */
-header h1 {
-    font-family: Arial, sans-serif;
-    color: #E91E63;
-    font-size: 2.5rem;
-    margin-top: 20px;
-}
-
-/* Estilos de la tabla */
+/* Estilos para las tablas */
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
 }
 
-/* Estilo para los encabezados con animación */
+/* Estilos para los encabezados de tabla */
 th {
-    background-color: #FF80AB;
+    background-color: #FF80AB; /* Color de fondo para encabezados */
     color: white;
-    padding: 10px;
+    padding: 12px;
     font-size: 1.2rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 th.animated-header:hover {
-    background-color: #F50057;
-    transform: scale(1.1);
+    background-color: #F50057; /* Cambio de color en hover */
+    transform: scale(1.1); /* Efecto de ampliación en hover */
 }
 
-/* Estilo para las celdas */
+/* Estilos para las celdas de la tabla */
 td {
-    padding: 10px;
+    padding: 12px;
     font-size: 1rem;
     text-align: center;
     border: 1px solid #ddd;
 }
 
-button {
-    background-color: #FF4081;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Animación de los botones */
-button:hover {
-    background-color: #F50057;
-    transform: scale(1.1);
-}
-
-/* Estilos de los botones de navegación */
+/* Estilos para los botones de navegación */
 button:last-of-type {
     margin-top: 20px;
 }
 
-/* Estilo de los mensajes */
+/* Estilo para los mensajes de resultado */
 #resultMessage {
     font-size: 1.2rem;
     color: red;
     margin-top: 20px;
 }
 
+/* Estilos para los enlaces */
+a {
+    color: #E91E63; /* Color de los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #F50057; /* Cambio de color en hover */
+}
 
